@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="./images/download.jpeg" width="50" alt="buspass icon">
+        <h1 style="color:blue">Telangana State Road Transport Corporation</h1>
+        
+        <h1>General Bus Pass Application</h1>
+    </center>
+        <form tag="get" action="./submit.html">
+            <fieldset style="background-color: rgb(248, 247, 245);">
+                <legend ><b>Application Details</b></legend>
+                <label for="username">Name*;</label> &nbsp;&nbsp;&nbsp;
+                <input type="text" name="Name" id="username" required>&nbsp;&nbsp;&nbsp;
+                <label for="username">Father's/Gaurdians Name:</label>
+                <input type="text" name="name" id="username" required>
+                <br>
+                <br>
+                <label for="date">Date of Birth*</label>&nbsp;&nbsp;&nbsp;
+                <input type="date" name="date" id="date" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="male"> Gender</label>
+                <input type ="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <br>
+                <br>
+                <label for="tel">Whatsapp No</label>&nbsp;&nbsp;&nbsp;
+                <input type="tel" name="no" id="tel" pattern="\+91[6789][0-9]{9}" minlength="12" maxlength="12" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="no">Aadhar No</label>&nbsp;&nbsp;&nbsp;
+                <input type="tel" name="aadhar" id="no" pattern="[0-9]{12}" required>
+                <br>
+                <br>
+                <label for="pic">Photo</label>
+                <input type="file" id="pic" name="photo" required>
+
+            </fieldset>
+        
+            
+            <fieldset style="background-color: rgb(248, 247, 245);">
+                <legend><b>Residential Address Details</b></legend>
+                <label for="Add">Applicants Address</label>&nbsp;&nbsp;
+                <textarea rows="5" cols="9">adderss </textarea>&nbsp;&nbsp;&nbsp;
+                <label for="dis">District </label>&nbsp;&nbsp;&nbsp;
+                <select>
+                    <option>Hyderabad</option>
+                    <option>Vikarabad</option>
+                    <option>Suryapet</option>
+                    <option selected>Secundrabad</option>
+
+                </select>
+                <br>
+                <br>
+                <label for="Mandal">Mandal </label>&nbsp;&nbsp;&nbsp;
+                <select>
+                    <option selected>Hyderabad</option>
+                    <option>Vikarabad</option>
+                    <option>Suryapet</option>
+                    <option >Secundrabad</option>
+
+                </select>&nbsp;&nbsp;
+                <label for="village">Village</label>&nbsp;&nbsp;&nbsp;
+                <select id="village">
+                    <option selected>Hyderabad</option>
+                    <option>Guntur</option>
+                    <option>Suryapet</option>
+                    <option >Secundrabad</option>
+
+                </select>
+                <label for="Pin">Pincode</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="tel" id="pin" pattern="5[0-9]{5}" required>
+
+
+            </fieldset>
+        
+            <fieldset style="background-color: rgb(248, 247, 245);">
+                <legend><b>Pass Type Details</b></legend>
+                <Label for="ct">City</Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <select>
+                    <option selected>Hyderabad</option>
+                    
+                    <option >Secundrabad</option>
+
+                </select>
+                <br>
+                <br>
+                <label> PassType</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <select>
+                    <option selected>---SELECT---</option>
+                    
+                    <option >General</option>
+                    <option> Metro</option>
+                    <option>Ordinary</option>
+
+                </select>
+
+                 
+                
+            </fieldset>
+        
+            
+            <fieldset style="background-color: rgb(248, 247, 245);">
+                <legend ><b>Mode of Payment & Pass Collection</b></legend>
+                <label for="Pm">Payment Mode</label>&nbsp;&nbsp;&nbsp;
+                <select id="Pm">
+                    <option selected> Select Payment Mode</option>
+                    <option>Online Banking</option>
+                    <option> UPI Payments</option>
+                    <option> GPAY</option>
+                    <option> PPay</option>
+                  
+
+                </select>
+                <br><br>
+                <label for="Pd">Pass Delivery Mode</label>&nbsp;&nbsp;
+                <select id="Pd">
+                    <option selected> Select Pass Delivery Mode</option>
+                    <option> Offline</option>
+                    <option>Courier Service</option>
+                </select>
+                <br>
+                <br>
+                <label for="Pd">Centre at which you want to collect pass</label>&nbsp;&nbsp;
+                <select>
+                    <option selected>----SELECT----</option>
+                    <option>MGBS</option>
+                    <option>CBS</option>
+                    <option>UPPAL</option>
+                    <option>JBS</option>
+                </select>
+
+
+            </fieldset>
+           
+
+        </form>
+        <center><img src="./images/captcha.jpeg" width="80" alt="captcha"><br>
+            <form>
+                <input type="tel" pattern="[1738]" required><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </center>
+
+</body>
+</html>
